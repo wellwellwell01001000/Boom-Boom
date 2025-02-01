@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+         .top{
+            position: fixed;
+            width:100vw;
+            height: 1.2cm;
+            background-color: brown;
+            margin-left: 0%;
+            display: flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+        }
+        .nazi{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            border: none;
+            font-family: "Quantico",sans-serif;
+            font-size: large;
+            font-style: bold;
+            position: relative;
+            transition:ease-in 0.2s;
+            width: 4cm;
+        }
+        .nazi:hover{
+            background-color: antiquewhite;
+            color: black;
+            transition:ease-in 0.2s;
+
+        }
+        .nazi:active{
+            background-color: black;
+            color: aliceblue;
+            transition: ease-in 0.05s;
+        }
+        .bg{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            height: 10cm;
+            margin:0px;
+            z-index: 2;
+            text-align: center;
+            box-shadow: 0.2cm 0.2cm black;
+            background-color: rgb(0, 0, 0,0.5);
+        }
+        .sta{
+            position: relative;
+            bottom: 70px;
+            right: 20cm;
+
+        }
+        .Oorah{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            border: none;
+            font-family: "Quantico",sans-serif;
+            font-size: large;
+            font-style: bold;
+            position: relative;
+            right: 20px;
+            height: 50px;
+            width: 150px;
+            transition: ease-in 0.2s;
+            bottom: 135px;
+            left: 16cm;
+
+        }
+        .Oorah:hover{
+            transform: scale(1.2); 
+            background-color: antiquewhite;
+            color: black;
+            transition:ease-in 0.2s;
+            
+        }
+        .Oorah:active{
+            background-color: black;
+            color: aliceblue;
+            transform: scale(0.8);
+            transition: ease-in 0.05s;
+        }
+        .par{
+            font-family: "Quantico",sans-serif;
+
+        }
+        body{
+            background-image: url(hit.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"> 
+        <button class="nazi" type="button" onclick="document.location='index.html'" >HOME</button>
+        <button class="nazi" type="button" onclick="document.location='fuh.html'">FUHRER</button>
+        <button class="nazi" type="button" onclick="document.location='reg.html'">REGISTER</button>
+        <button class="nazi" type="button" onclick="document.location='index.html'">ABOUT</button>
+    </div>
+    <video autoplay muted loop id="bg-video" style="
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+    z-index: -1;
+">
+
+</video>
+    <div class="bg">
+        <img class="sta" src="heil.jpg"  height="150px" width="150px"  style="object-fit: cover ;position:relative ;  z-index : 20; border-radius: 100%; ">
+        <button class="Oorah" type="button" style="position: relative; z-index: 10;">Orrrah!</button>
+        <p class="par">Adolf Hitler[a] (20 April 1889 – 30 April 1945) was an Austrian-born German politician who was the dictator of Nazi Germany from 1933 until his suicide in 1945. He rose to power as the leader of the Nazi Party,[c] becoming the chancellor in 1933 and then taking the title of Führer und Reichskanzler in 1934.[d] His invasion of Poland on 1 September 1939 marked the start of the Second World War. He was closely involved in military operations throughout the war and was central to the perpetration of the Holocaust: the genocide of about six million Jews and millions of other victims.
+
+            Hitler was born in Braunau am Inn in Austria-Hungary and was raised near Linz. He lived in Vienna in the first decade of the 1900s before moving to Germany in 1913. He was decorated during his service in the German Army in World War I, receiving the Iron Cross. In 1919, he joined the German Workers' Party (DAP), the precursor of the Nazi Party, and in 1921 was appointed leader of the Nazi Party. In 1923, he attempted to seize governmental power in a failed coup in Munich and was sentenced to five years in prison, serving just over a year of his sentence. While there, he dictated the first volume of his autobiography and political manifesto Mein Kampf (My Struggle). After his early release in 1924, Hitler gained popular support by attacking the Treaty of Versailles and promoting pan-Germanism, antisemitism, and anti-communism with charismatic oratory and Nazi propaganda. He frequently denounced communism as being part of an international Jewish conspiracy. </p>
+        </div>
+    
+</body>
+</html>

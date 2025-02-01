@@ -1,0 +1,14 @@
+const audio = doccument.getElementById("myAduio");
+const button = document.getElementById("toggleeButton");
+
+
+button.addEventListener("click",function(){
+        if(audio.paused){
+            audio.play();
+            button.textContent = "Pause Music";
+
+        }else{
+            audio.pause();
+            button.textContent = "Play Music";
+        }
+});

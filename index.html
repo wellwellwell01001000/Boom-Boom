@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(wp1813830-2085753082.jpg);
+        }
+        .box{
+             
+            background-color: black;
+            height: 10px;
+            width:auto
+            
+        }
+        .boom{
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #bgvid {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+    }
+            .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        padding: 20px;
+        }
+        .Oorah{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            border: none;
+            font-family: "Quantico",sans-serif;
+            font-size: large;
+            font-style: bold;
+            position: relative;
+            right: 20px;
+            height: 50px;
+            width: 150px;
+            transition: ease-in 0.2s;
+            bottom: 135px;
+            left: 16cm;
+
+        }
+        .Oorah:hover{
+            transform: scale(1.2); 
+            background-color: antiquewhite;
+            color: black;
+            transition:ease-in 0.2s;
+            
+        }
+        .Oorah:active{
+            background-color: black;
+            color: aliceblue;
+            transform: scale(0.8);
+            transition: ease-in 0.05s;
+        }
+        @font-face{
+            font-family: 'hello';
+            src:local('AGENCYFB')
+        }
+        .top{
+            position: fixed;
+            width:100vw;
+            height: 1.2cm;
+            background-color: brown;
+            margin-left: 0%;
+            display: flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            
+
+
+        }
+        .bg{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            height: 10cm;
+            margin:0px;
+            z-index: 2;
+            text-align: center;
+            box-shadow: 0.2cm 0.2cm black;
+            background-color: rgb(0, 0, 0,0.5);
+        }
+        .sta{
+            position: relative;
+            bottom: 70px;
+            right: 20cm;
+
+        }
+        .nazi{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            border: none;
+            font-family: "Quantico",sans-serif;
+            font-size: large;
+            font-style: bold;
+            position: relative;
+            transition:ease-in 0.2s;
+            width: 4cm;
+        }
+        .nazi:hover{
+            background-color: antiquewhite;
+            color: black;
+            transition:ease-in 0.2s;
+
+        }
+        .nazi:active{
+            background-color: black;
+            color: aliceblue;
+            transition: ease-in 0.05s;
+        }
+        .par{
+            font-family: 'Quantico',sans-serif;
+        }
+        body{
+            background-image: url(sov.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top"> 
+        <button class="nazi" type="button" onclick="document.location='nazi.html'" >HOME</button>
+        <button class="nazi" type="button" onclick="document.location='fuh.html'">FUHRER</button>
+        <button class="nazi" type="button" onclick="document.location='reg.html'">REGISTER</button>
+        <button class="nazi" type="button" onclick="document.location='nazi.html'">ABOUT</button>
+    </div>
+    <video autoplay muted loop id="bg-video" style="
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+    z-index: -1;
+">
+    <source src="uni.mp4" autoplay muted loop nocontrol type="video/mp4">
+</video>
+<div class="bg">
+    
+<img class="sta" src="haaa.jpg"  height="150px" width="150px"  style="object-fit: cover ;position:relative ;  z-index : 20; border-radius: 100%; ">
+
+<button class="Oorah" type="button" style="position: relative; z-index: 10; " onclick="document.getElementById('myAudio').play()">Orrrah!</button>
+<p class="par" >Joseph Stalin (born December 18 [December 6, Old Style], 1878, Gori, Georgia, Russian Empire [see Researcher’s Note] —died March 5, 1953, Moscow, Russia, U.S.S.R.) was the secretary-general of the Communist Party of the Soviet Union (1922–53) and premier of the Soviet state (1941–53), who for a quarter of a century dictatorially ruled the Soviet Union and transformed it into a major world power.
+
+    During the quarter of a century preceding his death, the Soviet dictator Joseph Stalin probably exercised greater political power than any other figure in history. Stalin industrialized the Union of Soviet Socialist Republics, forcibly collectivized its agriculture, consolidated his position by intensive police terror, helped to defeat Germany in 1941–45, and extended Soviet controls to include a belt of eastern European states. Chief architect of Soviet totalitarianism and a skilled but phenomenally ruthless organizer, he destroyed the remnants of individual freedom and failed to promote individual prosperity, yet he created a mighty military-industrial complex and led the Soviet Union into the nuclear age.</p>
+</div>
+<!-- Audio element (hidden) -->
+<audio id="myAudio">
+    <source src="soviet.mp3" type="audio/mpeg">
+    Your browser does not support audio playback
+  </audio>
+</body> 
+
+</footer>
+</html>
